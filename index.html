@@ -1,0 +1,423 @@
+ <!DOCTYPE html>
+ <!-- Не забываем поменять язык основного контента -->
+ <html lang="ru">
+ <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Параметры адаптива -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!-- Название сайта -->
+	<title>Евклид - проектные системы</title>
+	<!-- Подключение иконки через конвертирование .png в .ico на сайте convertico.com -->
+	<link rel="icon" href="" type="image/x-icon"> 
+	<!-- Подключение Font Awesome 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> -->
+	<!-- Стили слайдера
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/> -->
+	<!-- Основная таблица стилей -->
+	<link rel="stylesheet" href="cssStorage/style.min.css">
+ </head>
+ <body>
+	<div class="wrapper">
+		<div class="cookies fix-block">
+	<div class="cookies__container">
+		<div class="cookies__inner">
+			<div class="cookies__content content-cookies">
+				<p class="content-cookies__text">Ку&#769;ки&nbsp;&mdash; небольшой фрагмент данных, отправленный веб-сервером и&nbsp;хранимый на&nbsp;компьютере пользователя.</p>
+			</div>
+			<div class="cookies__buttons buttons-cookies">
+				<button class="button-reset button-general button-primary buttons-cookies__button cookies-accept" type="button">Принять</button>
+				<button class="button-reset button-general button-additional buttons-cookies__button cookies-decline" type="button">Отклонить</button>
+			</div>
+		</div>
+	</div>
+</div>
+		<div class="popup search-popup">
+	<div class="popup-body search-body">
+		<div class="search-popup__content content-search">
+			<h3 class="form-header__title">Введите предмет поиска</h3>
+			<form class="header__form form-header" action="" method="post">
+				<input class="form-header__input" type="text" autocomplete="off" placeholder="Поиск...">
+				<button class="button-reset form-header__button" type="button" aria-label="">
+					<svg class="sprite-icon form-header__icon">
+						<use xlink:href="images/sprites.svg#search"></use>
+					</svg>
+				</button>
+				<!-- <ul class="list-reset form-header__list">
+					<li class="form-header__item">
+						<a class="link-transition form-header__link" href="">Иммунитет и бактериальные или вирусные инфекции</a>
+					</li>
+				</ul> -->
+			</form>
+		</div>
+		<button class="button-reset popup-close search-popup-close" type="button" aria-label="">
+			<svg class="popup-close-icon">
+				<use xlink:href="images/sprites.svg#close"></use>
+			</svg>
+		</button>
+	</div>
+</div>
+		<!-- Шапка сайта -->
+		<header class="header">
+	<div class="header__container header-inner">
+		<div class="header__logotype logotype-header">
+			<a class="logotype-header__link" href="">
+				<img src="images/header/header-logotype.png" alt="Евклид - проектные системы">
+			</a>
+		</div>
+		<div class="header__overlay overlay-header">
+			<nav class="header__navigation navigation-header">
+				<ul class="list-reset navigation-header__list">
+					<li class="navigation-header__item">
+						<a class="link-transition navigation-header__link" href="">Информация</a>
+					</li>
+					<li class="navigation-header__item">
+						<a class="link-transition navigation-header__link" href="">Проекты</a>
+					</li>
+					<li class="navigation-header__item">
+						<a class="link-transition navigation-header__link" href="">Этапы</a>
+					</li>
+					<li class="navigation-header__item">
+						<a class="link-transition navigation-header__link" href="">Отзывы</a>
+					</li>
+					<li class="navigation-header__item">
+						<a class="link-transition navigation-header__link" href="">Контакты</a>
+					</li>
+				</ul>
+				<button class="button-reset overlay-header-close visually-hidden"></button>
+			</nav>
+		</div>
+		<div class="header__options options-header" data-da=".navigation-header, 450">
+			<button class="button-reset options-header__button" type="button" aria-label="">
+				<svg class="sprite-icon options-header__icon">
+					<use xlink:href="images/sprites.svg#search"></use>
+				</svg>
+			</button>
+		</div>
+		<button class="button-reset burger-menu" type="button" aria-label="">
+			<span></span><span></span><span></span>
+		</button>
+	</div>
+</header>
+		<!-- Основной контент сайта -->
+		<main class="main">
+			<section class="firstscreen">
+	<div class="firstscreen__container">
+		<div class="firstscreen__inner">
+			<div class="swiper firstscreen-swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide firstscreen-slide">
+						<div class="firstscreen-slide__image _ibg">
+							<img src="images/firstscreen/image-1.jpg" alt="Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов.">
+						</div>
+					</div>
+					<div class="swiper-slide firstscreen-slide">
+						<div class="firstscreen-slide__image _ibg">
+							<img src="images/firstscreen/image-2.jpg" alt="Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов.">
+						</div>
+					</div>
+					<div class="swiper-slide firstscreen-slide">
+						<div class="firstscreen-slide__image _ibg">
+							<img src="images/firstscreen/image-3.jpg" alt="Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов.">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="firstscreen__content content-firstscreen">
+				<span class="content-firstscreen__title">Проектные решения любой сложности</span>
+				<p class="content-firstscreen__text">Есть над чем задуматься: базовые сценарии поведения пользователей и&nbsp;по&nbsp;сей день остаются уделом проектантов.</p>
+				<button class="button-reset button-general button-primary content-firstscreen__button" type="button" data-goto="footer-form">Заказать расчёт</button>
+			</div>
+		</div>
+	</div>
+</section>
+			<section class="about padding-top padding-bottom">
+	<div class="about__container">
+		<div class="about__heading heading-about">
+			<h2 class="heading-about__title">Информация о нашей компании</h2>
+			<p class="heading-about__text">Также как перспективное планирование создаёт необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. А&nbsp;также диаграммы связей могут быть описаны максимально подробно.</p>
+			<span class="heading-about__text about-more-text">Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов требует от&nbsp;нас анализа как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в&nbsp;отношении поставленных задач. Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</span>
+			<button class="button-reset button-general button-primary heading-about__button" type="bu
+			">Читать больше</button>
+		</div>
+		<div class="about__inner inner-about">
+			<a class="inner-about__left left-about _ibg" href="">
+				<img src="images/about/about-image.jpg" alt="Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.">
+				<div class="left-about__content content-left">
+					<p class="content-left__text">Принимая во&nbsp;внимание показатели успешности, перспективное планирование способствует подготовке и&nbsp;реализации новых принципов.</p>
+					<button class="button-reset button-general button-secondary content-left__button" type="button">Подробнее</button>
+				</div>
+			</a>
+			<div class="inner-about__right right-about">
+				<div class="right-about__box box-about">
+					<div class="box-about__image">
+						<img src="images/about/about-1.svg" alt="Консультация с широким активом">
+					</div>
+					<div class="box-about__content content-box">
+						<h3 class="content-box__title">Консультация с широким активом</h3>
+						<p class="content-box__text">А&nbsp;также свежий взгляд на&nbsp;привычные вещи&nbsp;&mdash; безусловно открывает новые горизонты для как самодостаточных, так и&nbsp;внешне зависимых концептуальных решений.</p>
+					</div>
+				</div>
+				<div class="right-about__box box-about">
+					<div class="box-about__image">
+						<img src="images/about/about-2.svg" alt="В своём стремлении повысить">
+					</div>
+					<div class="box-about__content content-box">
+						<h3 class="content-box__title">В своём стремлении повысить</h3>
+						<p class="content-box__text">Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+			<section class="steps padding-bottom">
+	<div class="steps__container">
+		<div class="steps__heading heading-steps">
+			<h2 class="heading-steps__title">Как мы работаем</h2>
+		</div>
+		<ul class="list-reset steps__buttons buttons-steps">
+			<li class="buttons-steps__item">
+				<button class="button-reset buttons-steps__button" type="button">1 шаг</button>
+			</li>
+			<li class="buttons-steps__item">
+				<button class="button-reset buttons-steps__button" type="button">2 шаг</button>
+			</li>
+			<li class="buttons-steps__item">
+				<button class="button-reset buttons-steps__button" type="button">3 шаг</button>
+			</li>
+			<li class="buttons-steps__item">
+				<button class="button-reset buttons-steps__button" type="button">4 шаг</button>
+			</li>
+		</ul>
+		<ul class="list-reset steps__cards">
+			<li class="cards-steps__item cards-steps">
+				<article class="cards-steps__article article-cards">
+					<div class="article-cards__content content-cards">
+						<h3 class="content-cards__title">Проводим консультацию</h3>
+						<p class="content-cards__text">Влечет за&nbsp;собой процесс внедрения и&nbsp;модернизации приоритизации разума над эмоциями. В&nbsp;рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А&nbsp;также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с&nbsp;зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в&nbsp;целом, однако конкретные выводы, разумеется, призваны к&nbsp;ответу.</p>
+						<div class="steps__options options-steps">
+							<button class="button-reset button-general button-primary options-steps__button" type="button">Подробнее</button>
+							<button class="button-reset button-general button-additional options-steps__button" type="button">Договор</button>
+						</div>
+					</div>
+					<div class="article-cards__image _ibg">
+						<img src="images/steps/image-1.jpg" alt="Проводим консультацию">
+					</div>
+				</article>
+			</li>
+			<li class="cards-steps__item cards-steps">
+				<article class="cards-steps__article article-cards">
+					<div class="article-cards__content content-cards">
+						<h3 class="content-cards__title">Составляем смету</h3>
+						<p class="content-cards__text">Внедрения и&nbsp;модернизации приоритизации разума над эмоциями. В&nbsp;рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А&nbsp;также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с&nbsp;зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.</p>
+						<div class="steps__options options-steps">
+							<button class="button-reset button-general button-primary options-steps__button" type="button">Подробнее</button>
+							<button class="button-reset button-general button-additional options-steps__button" type="button">Договор</button>
+						</div>
+					</div>
+					<div class="article-cards__image _ibg">
+						<img src="images/steps/image-2.jpg" alt="Составляем смету">
+					</div>
+				</article>
+			</li>
+			<li class="cards-steps__item cards-steps">
+				<article class="cards-steps__article article-cards">
+					<div class="article-cards__content content-cards">
+						<h3 class="content-cards__title">Привлекаем подрядчиков</h3>
+						<p class="content-cards__text">Идейные соображения высшего порядка, а&nbsp;также новая модель организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от&nbsp;дальнейших направлений развития. Разнообразный и&nbsp;богатый опыт говорит нам, что новая модель организационной деятельности говорит о&nbsp;возможностях системы массового участия. Принимая во&nbsp;внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по&nbsp;разработке прогресса профессионального сообщества.</p>
+						<div class="steps__options options-steps">
+							<button class="button-reset button-general button-primary options-steps__button" type="button">Подробнее</button>
+							<button class="button-reset button-general button-additional options-steps__button" type="button">Договор</button>
+						</div>
+					</div>
+					<div class="article-cards__image _ibg">
+						<img src="images/steps/image-3.jpg" alt="Привлекаем подрядчиков">
+					</div>
+				</article>
+			</li>
+			<li class="cards-steps__item cards-steps">
+				<article class="cards-steps__article article-cards">
+					<div class="article-cards__content content-cards">
+						<h3 class="content-cards__title">Инспектируем все этапы работ</h3>
+						<p class="content-cards__text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от&nbsp;дальнейших направлений развития. Разнообразный и&nbsp;богатый опыт говорит нам, что новая модель организационной деятельности говорит о&nbsp;возможностях системы массового участия. Принимая во&nbsp;внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.</p>
+						<div class="steps__options options-steps">
+							<button class="button-reset button-general button-primary options-steps__button" type="button">Подробнее</button>
+							<button class="button-reset button-general button-additional options-steps__button" type="button">Договор</button>
+						</div>
+					</div>
+					<div class="article-cards__image _ibg">
+						<img src="images/steps/image-4.jpg" alt="Инспектируем все этапы работ">
+					</div>
+				</article>
+			</li>
+		</ul>
+	</div>
+</section>
+
+<!-- 
+<div class="content-cards__footer footer-content">
+	<button class="button-reset button-general button-primary footer-content__button" type="button">Подробнее</button>
+	<button class="button-reset button-general button-additional footer-content__button" type="button">Договор</button>
+</div>
+ -->
+			<section class="questions padding-bottom">
+	<div class="questions__container">
+		<div class="questions__inner">
+			<div class="questions__heading heading-questions">
+				<h2 class="heading-questions__title">Часто задаваемые вопросы</h2>
+			</div>
+			<ul class="list-reset questions__spollers spollers-questions" data-spollers data-one-spoller>
+				<li class="spollers-questions__item">
+					<button class="button-reset spollers-questions__button" tabindex="-1" type="button" data-spoller>
+						Из чего формируется конечная стоимость проекта?
+						<svg class="spollers-questions__icon">
+							<use xlink:href="images/sprites.svg#questions-icon"></use>
+						</svg>
+					</button>
+					<div class="spollers-questions__content">
+						<p class="spollers-questions__text">Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть своевременно верифицированы. Но&nbsp;высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А&nbsp;ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали. И&nbsp;нет сомнений, что явные признаки победы институционализации призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть указаны как претенденты на&nbsp;роль ключевых факторов.</p>
+					</div>
+				</li>
+
+				<li class="spollers-questions__item">
+					<button class="button-reset spollers-questions__button" tabindex="-1" type="button" data-spoller>
+						У меня есть свой проект. Сможем ли мы его доработать/реализовать?
+						<svg class="spollers-questions__icon">
+							<use xlink:href="images/sprites.svg#questions-icon"></use>
+						</svg>
+					</button>
+					<div class="spollers-questions__content">
+						<p class="spollers-questions__text">Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к&nbsp;ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а&nbsp;значит, должны быть объединены в&nbsp;целые кластеры себе подобных. Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также многие известные личности призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть представлены в&nbsp;исключительно положительном свете.</p>
+					</div>
+				</li>
+
+				<li class="spollers-questions__item">
+					<button class="button-reset spollers-questions__button" tabindex="-1" type="button" data-spoller>
+						Я выбираю между разными компаниями. В чём ваше отличие?
+						<svg class="spollers-questions__icon">
+							<use xlink:href="images/sprites.svg#questions-icon"></use>
+						</svg>
+					</button>
+					<div class="spollers-questions__content">
+						<p class="spollers-questions__text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким образом, консультация с&nbsp;широким активом обеспечивает широкому кругу (специалистов) участие в&nbsp;формировании стандартных подходов.</p>
+					</div>
+				</li>
+
+				<li class="spollers-questions__item">
+					<button class="button-reset spollers-questions__button" tabindex="-1" type="button" data-spoller>
+						Могу ли я делегировать вам работу/согласование с подрядчиком/организацией?
+						<svg class="spollers-questions__icon">
+							<use xlink:href="images/sprites.svg#questions-icon"></use>
+						</svg>
+					</button>
+					<div class="spollers-questions__content">
+						<p class="spollers-questions__text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким образом, консультация с&nbsp;широким активом обеспечивает широкому кругу (специалистов) участие в&nbsp;формировании стандартных подходов.</p>
+					</div>
+				</li>
+
+				<li class="spollers-questions__item">
+					<button class="button-reset spollers-questions__button" tabindex="-1" type="button" data-spoller>
+						Могу ли я вернуть деньги на каком-либо из этапов работ?
+						<svg class="spollers-questions__icon">
+							<use xlink:href="images/sprites.svg#questions-icon"></use>
+						</svg>
+					</button>
+					<div class="spollers-questions__content">
+						<p class="spollers-questions__text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким образом, консультация с&nbsp;широким активом обеспечивает широкому кругу (специалистов) участие в&nbsp;формировании стандартных подходов.</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+		</main>
+		<!-- Подвал сайта -->
+		<footer class="footer">
+	<div class="footer__container footer-inner">
+		<div class="footer__column column-footer">
+			<div class="column-footer__logotype logotype-footer">
+				<a class="logotype-footer__link" href="">
+					<img src="images/footer/footer-logotype.png" alt="Евклид - проектные системы.">
+				</a>
+			</div>
+			<nav class="column-footer__navigation navigation-footer">
+				<ul class="list-reset navigation-footer__list">
+					<li class="navigation-footer__item">
+						<a class="navigation-footer__link link-transition" href="">Информация</a>
+					</li>
+					<li class="navigation-footer__item">
+						<a class="navigation-footer__link link-transition" href="">Проекты</a>
+					</li>
+					<li class="navigation-footer__item">
+						<a class="navigation-footer__link link-transition" href="">Отзывы</a>
+					</li>
+					<li class="navigation-footer__item">
+						<a class="navigation-footer__link link-transition" href="">Договор оферты</a>
+					</li>
+					<li class="navigation-footer__item">
+						<a class="navigation-footer__link link-transition" href="">Договор подряда</a>
+					</li>
+					<li class="navigation-footer__item">
+						<a class="navigation-footer__link link-transition" href="">Конфиденциальность</a>
+					</li>
+					<li class="navigation-footer__item">
+						<a class="navigation-footer__link link-transition" href="">Партнёрское соглашение</a>
+					</li>
+				</ul>
+			</nav>
+			<ul class="list-reset column-footer__socials socials-footer">
+				<li class="socials-footer__item">
+					<a class="socials-footer__link" href="">
+						<svg class="socials-footer__icon">
+							<use xlink:href="images/sprites.svg#fb"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="socials-footer__item">
+					<a class="socials-footer__link" href="">
+						<svg class="socials-footer__icon">
+							<use xlink:href="images/sprites.svg#vk"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="socials-footer__item">
+					<a class="socials-footer__link" href="">
+						<svg class="socials-footer__icon">
+							<use xlink:href="images/sprites.svg#instagram"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer__box box-footer" data-da=".navigation-footer__list, 992">
+			<form class="footer__form form-footer" id="footer-form" action="" method="post">
+				<h2 class="form-footer__title">Оставить заявку</h2>
+				<input class="form-general form-footer__input" type="text" autocomplete="off" placeholder="Фамилия, имя и отчество*">
+				<input class="form-general form-footer__input" type="email" autocomplete="off" placeholder="Электронная почта*">
+				<textarea class="form-general form-footer__textarea" placeholder="Ваше сообщение"></textarea>
+				<div class="form-footer__content content-form">
+					<button class="button-reset button-general button-primary content-form__button" type="button">Отправить данные</button>
+				</div>
+			</form>
+		</div>
+		<div class="footer__information information-footer" data-da=".column-footer, 1300">
+			<p class="information-footer__text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким образом, консультация с&nbsp;широким активом обеспечивает широкому кругу (специалистов) участие в&nbsp;формировании стандартных подходов.</p>
+		</div>
+	</div>
+</footer>
+		<button class="button-reset up-button" type="button" aria-label="">
+			<svg class="up-button-icon">
+				<use xlink:href="images/sprites.svg#up-chevron"></use>
+			</svg>
+		</button>
+		<!-- Подключение карты 
+		<script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ&lang=ru_RU>"></script> --> 
+		<!-- Библиотека слайдера
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
+		<!-- Cookies
+		https://github.com/js-cookie/js-cookie -->
+		<script src="javascript/main.min.js"></script>
+	</div>
+ </body>
+ </html>
